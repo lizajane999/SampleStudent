@@ -36,8 +36,8 @@ private double gpa = -1; //because it is impossible to get a negative GPA
      
    /**
    * Formats Student object for printing
-   * If GPA is default -1 value, prints 
-   * special not set message
+   * If GPA is default value, prints 
+   * GPA not yet calculated
    * @return a String representation of Student
    */
    public String toString( ){
