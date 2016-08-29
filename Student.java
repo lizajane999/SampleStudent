@@ -1,5 +1,5 @@
 /**
- * A class for student objects
+ * A class for Students
  * @author  Lisa Miller from Blanca Polo
  * @since   8/28/16
  */
