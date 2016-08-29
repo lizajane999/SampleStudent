@@ -5,11 +5,11 @@
  */
 public class Student{
          
-//instance variables
-   
-private String name = "";
-private int id =0;
-private double gpa = -1; //because it is impossible to get a negative GPA
+   //instance variables
+      
+   private String name = "";
+   private int id =0;
+   private double gpa = -1; //because it is impossible to get a negative GPA
      
   /**
    * Two parameter Student constructor, GPA is default value -1
