@@ -1,15 +1,15 @@
 /**
- * A class for student objects
+ * A class Student
  * @author  Lisa Miller from Blanca Polo
  * @since   8/28/16
  */
 public class Student{
          
-//instance variables
+  //instance variables
    
-private String name = "";
-private int id =0;
-private double gpa = -1; //because it is impossible to get a negative GPA
+  private String name = "";
+  private int id =0;
+  private double gpa = -1; //because it is impossible to get a negative GPA
      
   /**
    * Two parameter Student constructor, GPA is default value -1
