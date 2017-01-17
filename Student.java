@@ -53,7 +53,7 @@ private double gpa = -1; //because it is impossible to get a negative GPA
         }
        return s;
    }
-        
+//         
         
    /** Gets methods */
    
@@ -61,9 +61,9 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    * Retrieves the Student ID
    * @return   the Student's ID number
    */
-   public int getID( ){
-      return this.id;
-   }
+//    public int getID( ){
+//       return this.id;
+//    }
    
    /**
    * retrieves the Student GPA
