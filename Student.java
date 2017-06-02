@@ -13,8 +13,8 @@ private double gpa = -1; //because it is impossible to get a negative GPA
      
   /**
    * Two parameter Student constructor, GPA is default value -1
-   * @param    String name    the student's name
-   * @param    int id      the student's ID number
+   * @param    name    the student's name
+   * @param    id      the student's ID number
    */
    public Student(String name, int id){
       this.name = name;  
@@ -24,9 +24,9 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    
   /**
    * Three parameter Student constructor
-   * @param    String name    the student's name
-   * @param    int id         the student's ID number
-   * @param    double gpa     the student's GPA
+   * @param    name    the student's name
+   * @param    id         the student's ID number
+   * @param    gpa     the student's GPA
    */
    public Student(String name, int id, double gpa){
       this.name = name;
@@ -61,9 +61,9 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    * Retrieves the Student ID
    * @return   the Student's ID number
    */
-//    public int getID( ){
-//       return this.id;
-//    }
+   public int getID( ){
+      return this.id;
+   }
    
    /**
    * retrieves the Student GPA
@@ -85,7 +85,7 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    
    /**
    * Changes the Student ID
-   * @param    int   the Student's new ID number
+   * @param newID   the Student's new ID number
    */
    public void setID(int newID ){
       this.id = newID;
@@ -93,7 +93,7 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    
    /**
    * Changes the Student GPA
-   * @param    double   the Student's new GPA 
+   * @param newGPA   the Student's new GPA 
    */     
    public void setGPA(double newGPA ){
       this.gpa = newGPA;
@@ -101,7 +101,7 @@ private double gpa = -1; //because it is impossible to get a negative GPA
    
    /**
    * Changes the Student name
-   * @param String   the Student's new name
+   * @param newName  the Student's new name
    */        
    public void setName(String newName ){
       this.name = newName;
