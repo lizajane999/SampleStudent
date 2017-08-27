@@ -1,5 +1,5 @@
 /**
- * A class Student
+ * A class for Students
  * @author  Lisa Miller from Blanca Polo
  * @since   8/28/16
  */
@@ -13,8 +13,8 @@ public class Student{
      
   /**
    * Two parameter Student constructor, GPA is default value -1
-   * @param    String name    the student's name
-   * @param    int id      the student's ID number
+   * @param    name    the student's name
+   * @param    id      the student's ID number
    */
    public Student(String name, int id){
       this.name = name;  
@@ -24,9 +24,9 @@ public class Student{
    
   /**
    * Three parameter Student constructor
-   * @param    String name    the student's name
-   * @param    int id         the student's ID number
-   * @param    double gpa     the student's GPA
+   * @param    name    the student's name
+   * @param    id         the student's ID number
+   * @param    gpa     the student's GPA
    */
    public Student(String name, int id, double gpa){
       this.name = name;
@@ -53,7 +53,7 @@ public class Student{
         }
        return s;
    }
-        
+//         
         
    /** Gets methods */
    
@@ -85,7 +85,7 @@ public class Student{
    
    /**
    * Changes the Student ID
-   * @param    int   the Student's new ID number
+   * @param newID   the Student's new ID number
    */
    public void setID(int newID ){
       this.id = newID;
@@ -93,7 +93,7 @@ public class Student{
    
    /**
    * Changes the Student GPA
-   * @param    double   the Student's new GPA 
+   * @param newGPA   the Student's new GPA 
    */     
    public void setGPA(double newGPA ){
       this.gpa = newGPA;
@@ -101,7 +101,7 @@ public class Student{
    
    /**
    * Changes the Student name
-   * @param String   the Student's new name
+   * @param newName  the Student's new name
    */        
    public void setName(String newName ){
       this.name = newName;

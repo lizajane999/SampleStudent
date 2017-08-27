@@ -33,7 +33,7 @@ public class StudentTest {
    */
    @Test public void constructorTest2(){
       Student s = new Student("Jayzee Doe", 13, 1.6);
-      Assert.assertEquals("Student ID should be 13", s.getID(), 13);
+      Assert.assertEquals("Student ID should be 13", 13, s.getID());
    
    }
    
