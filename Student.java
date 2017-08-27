@@ -1,7 +1,7 @@
 /**
  * A class Student.
  * @author  Lisa Miller from Blanca Polo
- * @since   1/16/17
+ * @since   8/20/2017
  */
 public class Student {
           
