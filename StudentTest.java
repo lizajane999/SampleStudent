@@ -23,7 +23,7 @@ public class StudentTest {
    */
    @Test public void constructorTest1(){
       Student s = new Student("Janice Doe", 596, 2.74);
-      Assert.assertEquals("Name should be Janice Doe", s.getName(), "Janice Doe");
+      Assert.assertEquals("GetName returns incorrect name.", s.getName(), "Janice Doe");
    
    }
 
@@ -33,7 +33,7 @@ public class StudentTest {
    */
    @Test public void constructorTest2(){
       Student s = new Student("Jayzee Doe", 13, 1.6);
-      Assert.assertEquals("Student ID should be 13", s.getID(), 13);
+      Assert.assertEquals("getId returns incorrect Student ID", s.getID(), 13);
    
    }
    
@@ -43,7 +43,7 @@ public class StudentTest {
    */
    @Test public void constructorTest3(){
       Student s = new Student("Jocelyn Doe", 13, 4.5);
-      Assert.assertEquals("Student GPA should be 4.5", s.getGPA(), 4.5, 0.0f);
+      Assert.assertEquals("getGPA returns incorrect GPA", s.getGPA(), 4.5, 0.0f);
    
    }
    
@@ -53,7 +53,7 @@ public class StudentTest {
    */
    @Test public void defaultGPATest(){
       Student s = new Student("Jane Doe", 1);
-      Assert.assertEquals("GPA shoult be set to default -1.", s.getGPA(), -1.0, 0.0f);
+      Assert.assertEquals("GPA is not set to the correct default value.", s.getGPA(), -1.0, 0.0f);
    
    }
    
@@ -66,7 +66,7 @@ public class StudentTest {
       String sName = s.getName();
       int sID = s.getID();
       double sGPA = s.getGPA();
-      Assert.assertEquals("To string correct format",  
+      Assert.assertEquals("toString return String format is not correct.",  
          "Name: Jane Doe\nStudent ID: 1\nGPA: 3.5", s.toString());
    
    }
@@ -79,7 +79,7 @@ public class StudentTest {
       String sName = s.getName();
       int sID = s.getID();
       double sGPA = s.getGPA();
-      Assert.assertEquals("To string correct format",  
+      Assert.assertEquals("toString return String format is not correct if GPA not set.",  
          "Name: John Doe\nStudent ID: 22\nGPA not yet calculated", s.toString());
    
    }
@@ -91,7 +91,7 @@ public class StudentTest {
       Student s = new Student("Jon Doe", 234, 3.7);
       String newName = new String("Jackson Buck");
       s.setName(newName);
-      Assert.assertTrue("Student's name should be Jackson Buck", s.getName().equals(newName));   
+      Assert.assertTrue("setName method problem, call to getName after returns incorrect name", s.getName().equals(newName));   
    }
    /**
    * Tests setGPA method
@@ -101,7 +101,7 @@ public class StudentTest {
       Student s = new Student("Jane Doe", 27, 2.6);
       double newGPA = 3.45;
       s.setGPA(newGPA);
-      Assert.assertTrue("Student's GPA should be 3.45", s.getGPA()== newGPA);   
+      Assert.assertTrue("setGPA method problem, call to getGPA after returns incorrect value", s.getGPA()== newGPA);   
   }
   
   /**
@@ -112,7 +112,7 @@ public class StudentTest {
       Student s = new Student("Jane Doe", 27, 2.6);
       int newID = 277;
       s.setID(newID);
-      Assert.assertTrue("Student's ID should be 277", s.getID()== newID);   
+      Assert.assertTrue("setID method problem, call to getID after returns incorrect value", s.getID()== newID);   
   }
 
 }
