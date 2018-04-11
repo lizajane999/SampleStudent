@@ -14,25 +14,25 @@ public class Student {
         
    /**
    * Two parameter Student constructor, GPA is default value -1.
-   * @param name the student's name
-   * @param id the student's ID number
+   * @param newName the student's name
+   * @param newID the student's ID number
    */
-   public Student(String name, int id) {
-      this.name = name;  
-      this.id = id;
+   public Student(String newName, int newID) {
+      this.name = newName;  
+      this.id = newID;
    } //constructor ends.
       
     
    /**
     * Three parameter Student constructor.
-    * @param  name    the student's name
-    * @param  id         the student's ID number
-    * @param  gpa     the student's GPA
+    * @param  newName    the student's name
+    * @param  newID         the student's ID number
+    * @param  newGPA     the student's GPA
    */
-   public Student(String name, int id, double gpa) {
-      this.name = name;
-      this.id = id;
-      this.gpa = gpa;
+   public Student(String newName, int newID, double newGPA) {
+      this.name = newName;
+      this.id = newID;
+      this.gpa = newGPA;
    } //constructor ends.
       
    /**
