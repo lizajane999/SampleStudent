@@ -1,7 +1,7 @@
 /**
  * A class Student.
- * @author  Lisa Miller from Blanca Polo
- * @since   8/20/2017
+ * @author  Lisa Miller
+ * @since   9/5/24
  */
 public class Student {
           
@@ -64,8 +64,8 @@ public class Student {
    public int getID() {
       return this.id;
    }
-    
-   /**
+//     
+  /**
    * retrieves the Student GPA.
    * @return   the Student's GPA 
    */      
@@ -79,6 +79,7 @@ public class Student {
    */        
    public String getName() {
       return this.name;
+   
    }             
    
    /* Sets methods. */
@@ -105,7 +106,20 @@ public class Student {
    */        
    public void setName(String newName) {
       this.name = newName;
-   }      
+   } 
+   
+   
+   /**
+   * driver to test Students.
+   * @param args not used.
+   */
+   public static void main(String[] args) {
+      Student s = new Student("Frank", 3423, 3.0);
+      
+      System.out.println(s);
+   
+   
+   } //end driver    
    
 } // end of class Student
 

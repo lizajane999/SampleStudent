@@ -23,8 +23,8 @@ public class StudentTest {
    */
    @Test public void constructorTest1() {
       Student s = new Student("Janice Doe", 596, 2.74);
-      Assert.assertEquals("GetName returns incorrect name.", 
-          s.getName(), "Janice Doe");
+      Assert.assertEquals("GetName returns incorrect name.", "Janice Doe", 
+          s.getName());
    
    }
 

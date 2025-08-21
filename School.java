@@ -28,11 +28,11 @@ public class School {
       d = s1.getGPA();
       System.out.println(d);
       
-      System.out.println(s2.toString());
+      System.out.println(s2);
       s2.setGPA(3.25);
       //d = s2.getGPA();
       //System.out.println(d);
-      System.out.println(s2.toString());
+      System.out.println(s2);
 //       System.out.println(s1.toString());
 //       System.out.println(s2.toString());
 //       System.out.println(s3.toString());
