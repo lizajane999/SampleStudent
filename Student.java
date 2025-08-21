@@ -1,7 +1,7 @@
 /**
  * A class Student.
- * @author  Lisa Miller from Blanca Polo
- * @since   1/16/17
+ * @author  Lisa Miller
+ * @since   9/5/24
  */
 public class Student {
           
@@ -14,25 +14,25 @@ public class Student {
         
    /**
    * Two parameter Student constructor, GPA is default value -1.
-   * @param name the student's name
-   * @param id the student's ID number
+   * @param newName the student's name
+   * @param newID the student's ID number
    */
-   public Student(String name, int id) {
-      this.name = name;  
-      this.id = id;
+   public Student(String newName, int newID) {
+      this.name = newName;  
+      this.id = newID;
    } //constructor ends.
       
     
    /**
     * Three parameter Student constructor.
-    * @param  name    the student's name
-    * @param  id         the student's ID number
-    * @param  gpa     the student's GPA
+    * @param  newName    the student's name
+    * @param  newID         the student's ID number
+    * @param  newGPA     the student's GPA
    */
-   public Student(String name, int id, double gpa) {
-      this.name = name;
-      this.id = id;
-      this.gpa = gpa;
+   public Student(String newName, int newID, double newGPA) {
+      this.name = newName;
+      this.id = newID;
+      this.gpa = newGPA;
    } //constructor ends.
       
    /**
@@ -64,8 +64,8 @@ public class Student {
    public int getID() {
       return this.id;
    }
-    
-   /**
+//     
+  /**
    * retrieves the Student GPA.
    * @return   the Student's GPA 
    */      
@@ -79,6 +79,7 @@ public class Student {
    */        
    public String getName() {
       return this.name;
+   
    }             
    
    /* Sets methods. */
@@ -105,7 +106,20 @@ public class Student {
    */        
    public void setName(String newName) {
       this.name = newName;
-   }      
+   } 
+   
+   
+   /**
+   * driver to test Students.
+   * @param args not used.
+   */
+   public static void main(String[] args) {
+      Student s = new Student("Frank", 3423, 3.0);
+      
+      System.out.println(s);
+   
+   
+   } //end driver    
    
 } // end of class Student
 
